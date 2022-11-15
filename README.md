@@ -1,5 +1,2 @@
-## What this does?
-This repo along with https://github.com/saha-rajdeep/kubernetescode creates a Jenkins pipeline with GitOps to deploy code into a Kubernetes cluster. CI part is done via Jenkins and CD part via ArgoCD (GitOps).
-
-
-Please refer to the https://github.com/saha-rajdeep/kubernetescode/blob/main/README.md for the instructions on how to use the codes.
+This repo is used to deploy code into a K8s cluster.  ArgoCD is installed in the same K8s cluster and is used for continuous deployment (CD)
+Continuous integration is achieved using Jenkins and the application code, Jenkinsfile, and Dockerfile in the k8scode repo is used to build a docker image, and push it to docker hub.
